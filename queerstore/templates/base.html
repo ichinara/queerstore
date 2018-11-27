@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+
+{#{% block title_block %} Oi, eu sou um titulo que se encaixa na aba :3 {% endblock title_block %}#}
+<head>
+    <meta charset="UTF-8">
+    <title>UniQueer Store</title>
+    <link rel="icon" href="{% static 'media/logo.png' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'semantic/semantic.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/base.css' %}">
+    <link href="{% static 'fonts/marguerite.ttf' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'fonts/Champagne.ttf' %}" rel="stylesheet" media="screen">
+    <script src="{% static 'js/jquery-3.1.0.js' %}"></script>
+    <script src="{% static 'semantic/semantic.min.js' %}"></script>
+</head>
+
+<body>
+
+        <div class="ui inverted vertical masthead center aligned segment" id="layoutmenu">
+
+
+                <div class="banner">
+                        <img class="banner-image"  src="{% static 'media/hom.jpg' %}"/>                
+                </div>
+    
+
+            <div class="ui container">
+                <nav class="ui secondary inverted secondary pointing menu" id="menu">
+                        <a href="http://localhost:8000/" class="{% block inicio_active %}{% endblock %} item">
+                            Inicio
+                        </a>
+                        <a href="http://localhost:8000/camisetas/" class="{% block camisetas_active %}{% endblock %} item">
+                            Camisetas
+                        </a>
+                        <a href="http://localhost:8000/canecas/" class="{% block canecas_active %}{% endblock %} item">
+                            Canecas
+                        </a>
+                        <a href="http://localhost:8000/faleconosco/" class="{% block causa_active %}{% endblock %} item">
+                            Contato
+                        </a></nav>   
+            </div>
+
+        </div>
+
+
+
+
+<article class="ui container">
+    {% block body_block %} {% endblock body_block %}
+</article>
+
+<footer class="ui grid" style="background-color: #1b1c1d">
+    <div class=" column"></div>
+    <div class="middle aligned fifteen wide column">
+        <h3 class="ui inverted header">
+            <img src="{% static 'media/av.jpg' %}" class='ui circular massive image'/>
+            Vi
+        </h3>
+    </div>
+</footer>
+
+
+</body>
+</html>

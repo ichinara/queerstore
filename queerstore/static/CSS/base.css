@@ -1,0 +1,97 @@
+
+@font-face {
+    font-family: 'marguerite';
+    src: url('../fonts/marguerite.ttf')  format("truetype"),
+         local('marguerite');
+  }
+
+  @font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('../fonts/Champagne.ttf')  format("truetype"),
+         local('Champagne');
+  }
+
+.estilo {
+    /*font-size: xx-large;*/
+}
+
+
+#estiloso {
+    color: rgba(107, 1, 0, 0.97);
+    font-family: "marguerite";
+    font-size: xx-large;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#textobase {
+    color: rgba(22, 0, 0, 0.95);
+    font-family: "Champagne & Limousines";
+    font-size: xx-large;
+    text-align: left;
+}
+
+
+#menu {
+    margin-top: -4.50%;
+    font-size: 110%;
+
+}
+
+#layoutmenu {
+    margin-top: -2%;
+    width: 100%;
+    background-color: #F6F6F6;
+}
+
+h2 {
+    font-family: Ubuntu;
+}
+
+
+html {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #F6F6F6;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #F6F6F6;
+
+}
+
+.banner-image {
+    width:100%;
+    padding: auto;
+}
+
+header {
+    min-height: 20%;
+    padding: 0;
+
+}
+
+article {
+    min-height: 70%;
+}
+
+footer {
+    min-height: 20%;
+}
+
+article > h1.estilo {
+    font-weight: bold;
+    font-style: normal;
+    color: #6435c9 !important;
+
+}
+
+.ui.grid>.column:not(.row){
+    padding: 0!important;
+}
+article.ui.container{
+  padding-top: 5%;
+}
+
