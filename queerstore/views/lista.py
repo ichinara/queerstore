@@ -7,3 +7,22 @@ class Inicio(ListView):
 
     def get(self, request, *args, **kwargs):
         return render(request, self.template, {})
+
+class Camisetas(ListView):
+    template = 'camisetas.html'
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template, {})
+
+
+class Canecas(ListView):
+    template = 'canecas.html'
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template, {})
+
+class Contato(ListView):
+    template = 'contato.html'
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template, {})

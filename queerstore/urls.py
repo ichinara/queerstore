@@ -15,7 +15,7 @@ Including another URLconf
 """
 #from django.contrib import admin
 #from django.urls import path
-from queerstore.views.lista import Inicio
+from queerstore.views.lista import Inicio, Camisetas, Canecas, Contato
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import include, path
@@ -23,11 +23,12 @@ from django.urls import include, path
 urlpatterns = [
 
     url(r'^home/', Inicio.as_view()),
-
+    url(r'^camisetas/', Camisetas.as_view()),
+    url(r'^canecas/', Canecas.as_view()),
+    url(r'^contato/', Contato.as_view()),
 
     # The Django admin is not officially supported; expect breakage.
     # Nonetheless, it's often useful for debugging.
-
 
     # path('', application.urls),  # > Django-2.0
 ]
