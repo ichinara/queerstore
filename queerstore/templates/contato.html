@@ -1,15 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block contato_active %}active{% endblock %}
 {% block body_block %}
 
-
+    <div class="five wide column"></div>
     <h1 id="estiloso" class="ui dividing header"><p>Bora conversar arroba?</p></h1>
     </div><h1 id="textobase">
     <p>Deixe seu feedback ou retire uma dúvida no formulário abaixo, nossa equipe irá te responder em até 24 horas.</p></h1>
     </div>
+
+    <div class="five wide column">
+        <div class="ui form">
+        <form method="POST"> {% csrf_token %}
+            <div class="field">
+
+                <label>Nome</label>
+                <input type="text" placeholder="Nome completo">
+
+                <label>Endereço de email :</label>
+                <input type="text" placeholder="Email para contato">
+
+                <label>Mensagem</label>
+                <input type="text" placeholder="Obrigado pelo recadinho <3">
+            </div>
+            <div class="ui button" tabindex="0">Enviar</div>
+        </form></div>
+
+    </div>
+
 
 
 
